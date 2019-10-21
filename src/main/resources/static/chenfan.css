@@ -1,0 +1,121 @@
+html, body{
+	width: 100%;
+	height: 100%;
+}
+@font-face{
+	font-family:yumu;
+	src:url("https://g.alicdn.com/dt/libs/fonts/yumu.ttf")
+}
+@font-face{
+	font-family:iconfont;
+	src:url(https://at.alicdn.com/t/font_416190_abhgpspnxc4n29.eot);
+	src:url(https://at.alicdn.com/t/font_416190_abhgpspnxc4n29.eot?#iefix) format("embedded-opentype"),url(https://at.alicdn.com/t/font_416190_abhgpspnxc4n29.woff) format("woff"),url(https://at.alicdn.com/t/font_416190_abhgpspnxc4n29.ttf) format("truetype"),url(https://at.alicdn.com/t/font_416190_abhgpspnxc4n29.svg#iconfont) format("svg")
+}
+body{
+	background: url('/12.png') no-repeat center center fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.odometer.odometer-auto-theme, .odometer.odometer-theme-default{
+	font-family: iconfont;
+}
+.main{
+	min-width: 1200px;
+	text-align: center;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	font-family: iconfont;
+	font-size: 130px;
+	font-weight: bolder;
+	color: #e4bf59; 
+    text-shadow: 6px 6px 5px #000;
+}
+
+.currency{
+	font-size: 105px
+}
+
+.wapper{
+	position: absolute;
+	width: 100%;
+	bottom: 25%;
+	text-align: center;
+	font-size: 45px;
+	color: #e4bf59;
+	font-weight: 500;
+}
+.wapper .currency{
+	font-size: 25px;
+}
+.wapper .col-md-6{
+	padding: 0 15%;
+}
+.wapper .pull-right{
+	margin-left: 15px;
+}
+.wapper .pull-left{
+	margin-right: 15px;
+}
+.h4, .h5, .h6, h4, h5, h6{
+	margin-top: 15px;
+	margin-bottom: 0px;
+	color: #fff;
+	font-weight: bolder;
+}
+.footer{
+	position: absolute;
+	width: 100%;
+	bottom: 5px;
+	text-align: center;
+	font-size: 32px;
+	color: #fff;
+}
+.copyright{
+	font-size: 20px
+}
+.modal-backdrop.in{
+	opacity: 1;
+	/* background: #363f48; */
+    /* background-image: url(/model-background.jpg); */
+}
+
+.modal.fade.in{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	color: white;
+	text-align: center;
+}
+
+ul.countdown {
+	list-style: none;
+	margin: 75px 0;
+	padding: 0;
+	display: block;
+	text-align: center;
+}
+.modal h3{
+	font-size: 55px;
+}
+ul.countdown li {
+	display: inline-block;
+}
+ul.countdown li span {
+	font-size: 120px;
+	font-weight: 300;
+	line-height: 80px;
+}
+ul.countdown li.seperator {
+	font-size: 30px;
+	line-height: 50px;
+	vertical-align: bottom;
+}
+ul.countdown li p {
+	color: #a7abb1;
+	font-size: 14px;
+}

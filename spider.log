@@ -1,0 +1,23 @@
+2019-10-21 10:56:35.000  INFO 2544 --- [restartedMain] com.lzj.spider.Application               : Starting Application on A0906201900366 with PID 2544 (D:\idea-workspace\12-11-12-00-00\target\classes started by xdxie in D:\idea-workspace\12-11-12-00-00)
+2019-10-21 10:56:35.005  INFO 2544 --- [restartedMain] com.lzj.spider.Application               : No active profile set, falling back to default profiles: default
+2019-10-21 10:56:35.059  INFO 2544 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-21 10:56:35.059  INFO 2544 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-21 10:56:36.364  INFO 2544 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-10-21 10:56:36.376  INFO 2544 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-21 10:56:36.376  INFO 2544 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2019-10-21 10:56:36.381  INFO 2544 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_181\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Progra~1\Java\jdk1.8.0_181\bin;C:\Progra~1\Java\jdk1.8.0_181\jre\bin;C:\Program Files (x86)\MySQL\MySQL Server 5.5\bin;D:\nodejs\;E:\hadoop-2.7.2\bin;C:\Users\xdxie\AppData\Local\Microsoft\WindowsApps;D:\VanDyke Software\Clients\;C:\Users\xdxie\AppData\Roaming\npm;.]
+2019-10-21 10:56:36.479  INFO 2544 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-21 10:56:36.480  INFO 2544 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1421 ms
+2019-10-21 10:56:36.506  INFO 2544 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-10-21 10:56:36.509  INFO 2544 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-10-21 10:56:36.509  INFO 2544 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-10-21 10:56:36.509  INFO 2544 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2019-10-21 10:56:36.509  INFO 2544 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-10-21 10:56:37.089  INFO 2544 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 10:56:37.159  INFO 2544 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2019-10-21 10:56:37.239  INFO 2544 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-21 10:56:37.278  INFO 2544 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-10-21 10:56:37.281  INFO 2544 --- [restartedMain] com.lzj.spider.Application               : Started Application in 2.629 seconds (JVM running for 4.395)
+2019-10-21 10:56:52.647  INFO 2544 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-21 10:56:52.647  INFO 2544 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-21 10:56:52.652  INFO 2544 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms

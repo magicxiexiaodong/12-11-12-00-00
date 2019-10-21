@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lzj.spider.dao.TaobaoAccountMapper">
+    <resultMap id="BaseResultMap" type="com.lzj.spider.model.TaobaoAccount">
+        <id column="id" jdbcType="INTEGER" property="id" />
+        <result column="account" jdbcType="VARCHAR" property="account" />
+        <result column="password" jdbcType="VARCHAR" property="password" />
+        <result column="weitao_recent_update_time" jdbcType="TIMESTAMP" property="weitaoRecentUpdateTime" />
+        <result column="weitao_token" jdbcType="VARCHAR" property="weitaoToken" />
+        <result column="cookies" jdbcType="VARCHAR" property="cookies" />
+        <result column="addtime" jdbcType="TIMESTAMP" property="addtime" />
+        <result column="is_company" jdbcType="INTEGER" property="isCompany" />
+        <result column="brand_name" jdbcType="VARCHAR" property="brandName" />
+        <result column="sycm_token" jdbcType="VARCHAR" property="sycmToken" />
+        <result column="tao_bao_order_detail_update_time" jdbcType="TIMESTAMP" property="taoBaoOrderDetailUpdateTime" />
+        <result column="sycm_logistics_update_time" jdbcType="TIMESTAMP" property="sycmLogisticsUpdateTime" />
+        <result column="tao_bao_guest_market_update_time" jdbcType="TIMESTAMP" property="taoBaoGuestMarketUpdateTime" />
+        <result column="zuanshi_whole_15_shop_update_time" jdbcType="TIMESTAMP" property="zuanshiWhole15ShopUpdateTime" />
+        <result column="zuanshi_whole_7_shop_update_time" jdbcType="TIMESTAMP" property="zuanshiWhole7ShopUpdateTime" />
+        <result column="zuanshi_single_15_shop_update_time" jdbcType="TIMESTAMP" property="zuanshiSingle15ShopUpdateTime" />
+        <result column="zuanshi_single_7_shop_update_time" jdbcType="TIMESTAMP" property="zuanshiSingle7ShopUpdateTime" />
+        <result column="zuanshi_content_15_update_time" jdbcType="TIMESTAMP" property="zuanshiContent15UpdateTime" />
+        <result column="zuanshi_content_7_update_time" jdbcType="TIMESTAMP" property="zuanshiContent7UpdateTime" />
+        <result column="through_train_15_update_time" jdbcType="TIMESTAMP" property="throughTrain15UpdateTime" />
+        <result column="through_train_7_update_time" jdbcType="TIMESTAMP" property="throughTrain7UpdateTime" />
+        <result column="through_train_3_update_time" jdbcType="TIMESTAMP" property="throughTrain3UpdateTime" />
+        <result column="pin_sale_account_update_time" jdbcType="TIMESTAMP" property="pinSaleAccountUpdateTime" />
+        <result column="pin_sale_thirty_update_time" jdbcType="TIMESTAMP" property="pinSaleThirtyUpdateTime" />
+        <result column="pin_sale_fifteen_update_time" jdbcType="TIMESTAMP" property="pinSaleFifteenUpdateTime" />
+        <result column="pin_sale_seven_update_time" jdbcType="TIMESTAMP" property="pinSaleSevenUpdateTime" />
+        <result column="pin_sale_three_update_time" jdbcType="TIMESTAMP" property="pinSaleThreeUpdateTime" />
+        <result column="through_finance_update_time" jdbcType="TIMESTAMP" property="throughFinanceUpdateTime" />
+        <result column="zuanshi_oprating_update_time" jdbcType="TIMESTAMP" property="zuanshiOpratingUpdateTime" />
+        <result column="zuanshi_account_detail_update_time" jdbcType="TIMESTAMP" property="zuanshiAccountDetailUpdateTime" />
+        <result column="symc_visitor_month_update_time" jdbcType="TIMESTAMP" property="symcVisitorMonthUpdateTime" />
+        <result column="symc_visitor_week_update_time" jdbcType="TIMESTAMP" property="symcVisitorWeekUpdateTime" />
+        <result column="symc_visitor_day_update_time" jdbcType="TIMESTAMP" property="symcVisitorDayUpdateTime" />
+        <result column="symc_flow_update_time" jdbcType="TIMESTAMP" property="symcFlowUpdateTime" />
+        <result column="zuanshi_single_3_shop_update_time" jdbcType="TIMESTAMP" property="zuanshiSingle3ShopUpdateTime" />
+        <result column="zuanshi_content_3_update_time" jdbcType="TIMESTAMP" property="zuanshiContent3UpdateTime" />
+        <result column="zuanshi_whole_3_shop_update_time" jdbcType="TIMESTAMP" property="zuanshiWhole3ShopUpdateTime" />
+        <result column="zuanshi_account_update_time" jdbcType="TIMESTAMP" property="zuanshiAccountUpdateTime" />
+        <result column="tao_bao_guest_update_time" jdbcType="TIMESTAMP" property="taoBaoGuestUpdateTime" />
+        <result column="oprating_update_time" jdbcType="TIMESTAMP" property="opratingUpdateTime" />
+        <result column="oprating_new_update_time" jdbcType="TIMESTAMP" property="opratingNewUpdateTime" />
+        <result column="product_effect_sku_update_time" jdbcType="TIMESTAMP" property="productEffectSkuUpdateTime" />
+        <result column="product_effect_update_time" jdbcType="TIMESTAMP" property="productEffectUpdateTime" />
+        <result column="through_train_1_update_time" jdbcType="TIMESTAMP" property="throughTrain1UpdateTime" />
+        <result column="directional_15_update_time" jdbcType="TIMESTAMP" property="directional15UpdateTime" />
+        <result column="directional_7_update_time" jdbcType="TIMESTAMP" property="directional7UpdateTime" />
+        <result column="directional_3_update_time" jdbcType="TIMESTAMP" property="directional3UpdateTime" />
+        <result column="directtional_1_update_time" jdbcType="TIMESTAMP" property="directtional1UpdateTime" />
+        <result column="through_train_op_update_time" jdbcType="TIMESTAMP" property="throughTrainOpUpdateTime" />
+    </resultMap>
+
+    <select id="getCookie" resultType="String">
+        select cookies from taobao_account where id = 12
+    </select>
+</mapper>

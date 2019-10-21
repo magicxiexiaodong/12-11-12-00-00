@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>˫11ս��</title>
+    <script src="/webjars/jquery/jquery.min.js"></script>
+</head>
+
+<body>
+Welcome<br/>
+<input id="text" type="text" /><button onclick="send()">Send</button>    <button onclick="closeWebSocket()">Close</button>
+<div id="message">
+</div>
+</body>
+
+<script type="text/javascript">
+	$(function(){
+		var websocket = null;
+	    if('WebSocket' in window){
+	        websocket = new WebSocket("ws://localhost:8081/datawar/room");
+	    }else{
+	        alert('Not support websocket')
+	    }
+	    //���ӷ�������Ļص�����
+	    websocket.onerror = function(){
+	        setMessageInnerHTML("error");
+	    };
+	    //���ӳɹ������Ļص�����
+	    websocket.onopen = function(event){
+	        setMessageInnerHTML("open");
+	    }
+	    //���յ���Ϣ�Ļص�����
+	    websocket.onmessage = function(event){
+	        setMessageInnerHTML(event.data);
+	    }
+	    //���ӹرյĻص�����
+	    websocket.onclose = function(){
+	        setMessageInnerHTML("close");
+	    }
+	    //�������ڹر��¼��������ڹر�ʱ������ȥ�ر�websocket���ӣ���ֹ���ӻ�û�Ͽ��͹رմ��ڣ�server�˻����쳣��
+	    window.onbeforeunload = function(){
+	        websocket.close();
+	    }
+	    //����Ϣ��ʾ����ҳ��
+	    function setMessageInnerHTML(innerHTML){
+	        document.getElementById('message').innerHTML += innerHTML + '<br/>';
+	    }
+	    //�ر�����
+	    function closeWebSocket(){
+	        websocket.close();
+	    }
+	    //������Ϣ
+	    function send(){
+	        var message = document.getElementById('text').value;
+	        websocket.send(message);
+	    }
+	});
+</script>
+</html>
